@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="my portfolio description">
+    <meta name="keywords" content="my detailed, portfolio description">
+    <meta name="author" content="Sanju George">
+
+    <script src="https://kit.fontawesome.com/3a0e291956.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>
+                    <span class="highlight">My</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" target="_blank">About</a>
+                    </li>
+                    <li>
+                        <a href="myProjects.html" target="_blank">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>
+                <span class="highlight">SANJU GEORGE</span>
+            </h1>
+
+        </div>
+        <div class="media">
+            <ul class="subheading">
+                <li class="inline_li">
+                    <a title="LinkedIn" href="https://www.linkedin.com/in/sanju-george/" target="_blank" class="fab fa-linkedin"></a>
+                </li> |
+                <li class="inline_li">
+                    <a title="GitHub" href="https://github.com/sanjugr" target="_blank" class="fa fa-github "></a>
+                </li>|
+                <li class="inline_li">
+                    <a title="Resume" href="img/Sanju George.pdf" target="_blank" class="fa fa-file-text "></a>
+                </li> |
+                <li id="emailIcon" class="inline_li">
+                    <a title="Email" class=" fa fa-envelope "></a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="profilePic">
+                <img src="./img/profilePicture.png" >
+            </div>
+            <div class="profileDescription">
+                <p>Experienced Software Developer in Test with over 8 years of experience in Client-Server based, GUI and Web
+                    based applications . Seeking a Challenging career in the Area of Quality Assurance and Test Automation
+                    development in a professional organization, where my skills can add value to growth of the company, utilize
+                    my educational background and allow development of my skills to their fullest potential
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Email Modal Popup-->
+    <div id="emailPopupContainer" class="popupContainer">
+        <div id="emailPopupContent" class="popupContent">
+            <div>
+                <h3>Email</h3>
+            </div>
+            <h2>sanjugr@gmail.com</h2>
+        </div>
+    </div>
+    <script>
+        const email = document.getElementById("emailIcon");
+        const popupContainer = document.getElementById("emailPopupContainer")
+        email.addEventListener("click", e => popupContainer.style.display = "block");
+        popupContainer.addEventListener("click", e => popupContainer.style.display = "none");
+    </script>
+
+</body>
+
+<!--footer-->
+<footer>
+    <p>Copyright &copy; 2020</p>
+</footer>
+
+</html>
