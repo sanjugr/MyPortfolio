@@ -1,3 +1,9 @@
+
+html{
+    background-color:#f4f4f4;    
+    min-height: auto;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size:15px;
@@ -5,27 +11,53 @@ body{
     padding: 0;
     margin:0;
     background-color:#f4f4f4; 
-
 }
 
-/*Global*/
+/*------Global-------------------*/
+
 .container{
     width: 80%;
     margin:auto;
     overflow: hidden;
 }
-
 ul{
     margin: 0;
     padding:0; 
 }
 
-/*------Header------------*/
+
+/*****************index Html*****************/
+
+/*---------Portfolio Header------------*/
+
 header{
     background:#000000;
     color: #ffffff;
-    padding-top: 5px;
-    min-height: 20px;
+}
+
+header .container{
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+
+header #portfolioHeader #myPortfolioLabel{
+    float: left;
+}
+header #portfolioHeader #myPortfolioLabel h1{
+    margin:10px;
+}
+
+header .highlight,header .current a{
+    color: #ADD8E6;
+    font-weight: bold;
+}
+
+/*--menuNavigationLinks--*/
+
+header #menuNavigationLinks{
+    margin: 15px;
+    float: right;
 }
 
 header a{
@@ -35,29 +67,13 @@ header a{
     font-size: 16px;
 }
 
-/*------branding-------------*/
-header nav li{
-    float: left;
+header #menuNavigationLinks  nav{
+    float: right;
+  }
+  
+header #menuNavigationLinks  nav li{
     display:inline;
     padding:0 20px 0 20px;
-}
-
-header #branding{
-    float: left;
-}
-
-header #branding h1{
-    margin:0;
-}
-
-header nav{
-    float: right;
-    margin-top:10px;
-}
-
-header .highlight,header .current a{
-    color: #ADD8E6;
-    font-weight: bold;
 }
 
 
@@ -66,56 +82,40 @@ header a:hover{
     font-weight:bold;
 }
 
-/*------Showcase-------------*/
-#showcase{
+/*------------------------myDetails--------------*/
+#myDetails{
     min-height:300px;
     background:#202020;
     text-align: center;
     color: #ffffff;
 }
 
-#showcase h1{
-margin-top: 100px;
+#myDetails h1{
+margin-top: 90px;
 font-size: 65px;
 margin-bottom: 10px;
 color: #F0FFF0;
 }
 
-#showcase p{
-    font-size: 20px;
-}
-
 /*subheading icons specifications*/
-#showcase li {
+#myDetails li {
     font-weight: lighter;
     display:inline;
-    
 }
 
-#showcase li a{
+#myDetails li a{
     font-size: 26px;
     color: white;
     padding-right: 10px;
     padding-left: 10px;
 }
 
-#showcase li a:hover{
+#myDetails li a:hover{
     color: #cccccc;
     font-weight:bold;
 }
-/*----------Boxes----------*/
-#boxes .box{
-    float: left; 
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-}
-#boxes .box img{
-    width:90px;
-}
 
-/*subheadings*/
-#showcase  li{
+#myDetails  li{
     float: center; 
     text-align: center;
     padding: 10px;
@@ -123,36 +123,43 @@ color: #F0FFF0;
 
 }
 
-/*--------about-----------------*/
+/*--------about me-----------------*/
 
-#about {
-    min-height: 10%;
+#profile {
     background:#e6e6e6 ;
-    
+    position: relative;
+
 }
- #about .container h2{
-    margin:20px;
+#profile #profileSection{
+    height: 100%;
+}
+
+ #profile #profileSection h2{
     color: black;
 }
 
-#about .profilePic img{
-    width:80%;
+#profile #profilePic {
+    float: left;
+    width: auto;
+  }
+
+#profile #profilePic img{
+    width: auto;
     margin: auto;
     border: #f2f2f2 3px solid;
 }
 
-#about .profilePic {
- margin-top: 1.5%;
-  float: left;
-  width: 20%;
-}
-#about .profileDescription {
+
+#profile #profileDescription {
     float: right;
-    width: 80%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
     color: black;
   }
+
+
+
+
 /*----------email Popup----------*/
 
 #emailPopupContainer {
@@ -180,19 +187,29 @@ text-align: center;
 #emailPopupContainer h2 {
     font-weight: lighter;
     }
+
 /*----------footer----------*/
 footer{
     color: #ffffff;
     background-color: #202020;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem; 
+    position: relative;
 }
 
 
-/*-------My Projects-------*/
+/*-------My Projects HTML Page-------*/
+
+/*----------Boxes----------*/
+#boxes .box{
+    float: left; 
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#boxes .box img{
+    width:90px;
+}
+
 .aboutme{
     background-color: black;
     width: 100%;
